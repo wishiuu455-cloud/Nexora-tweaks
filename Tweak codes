@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexora Tweak</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #050505;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 60px;
+      border-bottom: 1px solid #222;
+      position: sticky;
+      top: 0;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #00d9ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00d9ff;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to bottom, #111, #050505);
+    }
+
+    .hero h1 {
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: #aaa;
+      font-size: 20px;
+      line-height: 1.7;
+    }
+
+    .buttons {
+      margin-top: 35px;
+    }
+
+    .btn {
+      padding: 15px 35px;
+      border-radius: 15px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+      margin: 10px;
+    }
+
+    .primary {
+      background: #00d9ff;
+      color: black;
+      box-shadow: 0 0 20px rgba(0,217,255,0.5);
+    }
+
+    .primary:hover {
+      transform: scale(1.05);
+    }
+
+    .secondary {
+      background: transparent;
+      border: 1px solid #444;
+      color: white;
+    }
+
+    .secondary:hover {
+      border-color: #00d9ff;
+    }
+
+    .features {
+      padding: 100px 50px;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 45px;
+      margin-bottom: 50px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #111;
+      padding: 40px;
+      border-radius: 25px;
+      border: 1px solid #222;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #00d9ff;
+    }
+
+    .card h3 {
+      margin: 20px 0;
+      font-size: 25px;
+    }
+
+    .card p {
+      color: #aaa;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #222;
+      color: #777;
+    }
+
+    @media(max-width: 700px) {
+      .hero h1 {
+        font-size: 45px;
+      }
+
+      header {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Nexora Tweak</div>
+    <nav>
+      <a href="#">Ana Sayfa</a>
+      <a href="#features">Özellikler</a>
+      <a href="#download">İndir</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Nexora Tweak</h1>
+    <p>
+      FPS artır, gecikmeyi azalt ve bilgisayarını maksimum performansa ulaştır.<br>
+      Oyuncular için modern tweak sistemi.
+    </p>
+    <div class="buttons">
+      <a href="#download"><button class="btn primary">Başla</button></a>
+      <a href="#features"><button class="btn secondary">Detaylar</button></a>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Özellikler</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>⚡ FPS Boost</h3>
+        <p>Oyunlarda daha yüksek FPS ve daha akıcı deneyim.</p>
+      </div>
+
+      <div class="card">
+        <h3>🛡️ Güvenli Sistem</h3>
+        <p>Stabil ve optimize edilmiş modern tweak altyapısı.</p>
+      </div>
+
+      <div class="card">
+        <h3>🎮 Gaming Mode</h3>
+        <p>Düşük gecikme ve maksimum performans modu.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero" id="download" style="height:60vh;">
+    <h1 style="font-size:50px;">Şimdi İndir</h1>
+    <p>En güncel Nexora Tweak sürümünü indir ve farkı hisset.</p>
+    <div class="buttons">
+      <button class="btn primary">İndir</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Nexora Tweak. Tüm Hakları Saklıdır.</p>
+  </footer>
+
+</body>
+</html>
